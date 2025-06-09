@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+header .logo span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header .search-bar {
+  display: flex;
+  align-items: center;
+}
+
+header .search-bar input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+header .search-bar button {
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+header .user-icon img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #fff;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  background-color: #f1f1f1;
+}
+
+.video-thumbnails {
+  flex: 1;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-card img {
+  border-radius: 8px 8px 0 0;
+}
+
+.video-info {
+  padding: 15px;
+}
+
+.video-info h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.video-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+.video-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Logo">
+      <span>YouTube</span>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+      <button>Search</button>
+    </div>
+    <div class="user-icon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Contacts_logo.png" alt="User Icon">
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <div class="main-content">
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+      <ul>
+        <li>Home</li>
+        <li>Trending</li>
+        <li>Subscriptions</li>
+        <li>Library</li>
+        <li>History</li>
+      </ul>
+    </div>
+
+    <!-- Video Thumbnails Section -->
+    <div class="video-thumbnails">
+      <div class="video-card">
+        <iframe width="430" height="300" src="https://www.youtube.com/embed/4GPvYMKtrtI?si=AjOgaxdWvZ2Df22i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" 
+        <div class="video-info">
+          <h3>salaar trailer</h3>
+          <p>manohar creations</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <iframe width="430" height="300" src="https://www.youtube.com/embed/y1-w1kUGuz8?si=OC6oayCYRqCzM6uc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="video-info">
+          <h3>kalki trailer</h3>
+          <p>lova creations</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <iframe width="430" height="300" src="https://www.youtube.com/embed/YFZMBqyXkqQ?si=ebFteUSRMjCrvhHr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="video-info">
+          <h3> rajasaab glimse</h3>
+          <p>prashu creations</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+          <iframe width="430" height="300" src="https://www.youtube.com/embed/rDoFiOjoC2Y?si=qm5XwrYPz88tM-Dp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h3>saaho trailer</h3>
+          <p>prashu-manohar-lova</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
